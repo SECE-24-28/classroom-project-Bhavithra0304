@@ -1,0 +1,70 @@
+*{
+    color:aliceblue;
+}
+
+
+p{
+    color: aqua;
+}
+/* Group Selector */
+h1,
+h2{
+    color: chartreuse;
+}
+
+/* descendant selector */
+div p{
+    color: red;
+}
+
+/* Chils selector */
+div > p{
+    color: blueviolet;
+}
+
+/* attribute selector */
+button[type="submit"]{
+    color:aliceblue;
+}
+
+/* Pseudo Class */
+li:nth-child(2)
+{
+    color: red;
+    font-size: 25px;
+}
+
+li:hover
+{
+    color: yellowgreen;
+}
+
+/* Psedo Elements */
+#r::before{
+    content: "Written by CSS";
+}
+
+.b::first-letter{
+    font-size: 48px;
+}
+
+#q{
+    display: block;
+}
+
+#q::first-letter{
+    font-size: 50;
+}
+
+#q::first-line{
+    color: brown;
+    font-size: 30;
+}
+
+/* Box Model */
+h1::nth-child(1)
+{
+    border: 30px 10px 20px 40px;
+    padding: 10px;
+    margin: 20px;
+}
