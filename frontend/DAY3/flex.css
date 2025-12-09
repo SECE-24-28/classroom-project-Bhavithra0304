@@ -1,0 +1,44 @@
+.flexContainer{
+    border :2px solid red;
+    display: flex;
+    height: 90vh;
+    /* justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; */
+
+    /* flex-wrap: wrap;
+    align-content: center; */
+    /*
+    //no default value
+    align- content is used only for flex warp(to avoid space
+       */
+}
+
+.flexItem{
+    background-color: yellow;
+    border: 2px solid red;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    height: 10vh;
+    width: 80px;
+    
+}
+
+.flexItem:nth-child(1){
+    order: 1;
+    align-self: center;
+
+}
+
+.flexItem:nth-child(6){
+    order: -1;
+    align-self: flex-end;
+
+}
+
+/* to place the item at the end we have to use graeter value from 0 to put the elemnt at negative value
+the default order of every elment is 0 
+flex direction and flex-wrap->flex iflow
+
+*/
